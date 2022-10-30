@@ -14,12 +14,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ImageView img = findViewById(R.id.animationView);
-        // определим для ImageView какое-нибудь изображение
+        // кладём кота в на форму
         img.setImageResource(R.drawable.cat);
-        // создаем анимацию
-        Animation animation = AnimationUtils.loadAnimation(this, R.anim.common_animation);
-        // запуск анимации
+        // говорим как прыгать
+        Animation animation = AnimationUtils.loadAnimation(this, R.anim.cat_animation);
+        // пускаем прыгать
         img.startAnimation(animation);
+
 
     }
 }
